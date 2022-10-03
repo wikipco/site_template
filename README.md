@@ -30,7 +30,7 @@ source_dir: source
 public_dir: public/<site-name>
 ```
 
-## Edit `resources.yml`
+## Edit resources.yml
 ```
 title: <Site Name>
 cloudinary_user: <Cloudinary Username>
@@ -45,3 +45,15 @@ favicon: <favicon URL>
 - Generate static files, `hexo generate`
 - Push changes to public submodule
 - Push changes to source repo
+
+### How to generate files
+
+This site is built using nodejs and hexo framework.
+If you have nodejs installed, you can run the following commands to build and test the site:
+```
+$ npm install
+$ hexo s # starts the web server
+$ hexo generate # generates the static files at public/<site-name>/
+```
+### Adding posts
+Posts should be added to the `source/_posts/` directory.
